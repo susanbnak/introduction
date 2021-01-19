@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Lulo Clean W01";
-  src: url("../../fonts/Lulo-Clean-W01-One-Bold.eot");
-  src: local("Lulo Clean W01"), url("../../fonts/Lulo-Clean-W01-One-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Lulo-Clean-W01-One-Bold.woff") format("woff"), url("../../fonts/Lulo-Clean-W01-One-Bold.ttf") format("truetype"), url("../../fonts/Lulo-Clean-W01-One-Bold.svg#Lulo Clean W01") format("svg");
+  src: url("../fonts/Lulo-Clean-W01-One-Bold.eot");
+  src: local("Lulo Clean W01"), url("../fonts/Lulo-Clean-W01-One-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lulo-Clean-W01-One-Bold.woff") format("woff"), url("../fonts/Lulo-Clean-W01-One-Bold.ttf") format("truetype"), url("../fonts/Lulo-Clean-W01-One-Bold.svg#Lulo Clean W01") format("svg");
 }
 
 /* ----------- screen ----------- */
@@ -595,8 +595,8 @@
 
 @font-face {
   font-family: "Lulo Clean W01";
-  src: url("../../fonts/Lulo-Clean-W01-One-Bold.eot");
-  src: local("Lulo Clean W01"), url("../../fonts/Lulo-Clean-W01-One-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Lulo-Clean-W01-One-Bold.woff") format("woff"), url("../../fonts/Lulo-Clean-W01-One-Bold.ttf") format("truetype"), url("../../fonts/Lulo-Clean-W01-One-Bold.svg#Lulo Clean W01") format("svg");
+  src: url("../fonts/Lulo-Clean-W01-One-Bold.eot");
+  src: local("Lulo Clean W01"), url("../fonts/Lulo-Clean-W01-One-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lulo-Clean-W01-One-Bold.woff") format("woff"), url("../fonts/Lulo-Clean-W01-One-Bold.ttf") format("truetype"), url("../fonts/Lulo-Clean-W01-One-Bold.svg#Lulo Clean W01") format("svg");
 }
 
 /*----------  body  ----------*/
