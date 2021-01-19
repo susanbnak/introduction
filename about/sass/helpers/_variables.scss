@@ -9,8 +9,10 @@ $color-border02:#f16969;
 $color-border03:#f5bd44;
 $bodyColor:#333434;
 $bodyTitle:#434444;
+$bgColor-body:#f6f6ee;
 $textTitle:darken($color-border01,31%);
 $textMain:lighten($bodyTitle,20%);
+$textAriticle:darken($bgColor-body,5%);
 $shadow:#878787;
 
 $color-57:#ef657d;
@@ -23,7 +25,7 @@ $gray-l30: lighten($black,30%) ;
 $image-location:'../img/';
 $bg01:url(#{$image-location}bg-01.png);
 $bg02:url(#{$image-location}bg-02.png);
-$bgColor-body:#f6f6ee;
+
 
 
 
@@ -108,10 +110,6 @@ $zindex: (
     label: 10,
 );
 
-//font family
-$font_fi_01: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-$font_skia:'skia';
-$font_DancingScriptOT:'Dancing Script OT';
 
 
 //font size

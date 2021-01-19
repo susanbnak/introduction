@@ -23,26 +23,12 @@
 @include font-face('Lulo Clean W01','Lulo-Clean-W01-One-Bold','Lulo Clean W01');
 
 
-@include font-face('Brandon Grotesque Light','brandon-grotesque-light-58a8a4b38001d','Brandon Grotesque');
-@include font-face('Brandon Grotesque Black','brandon-grotesque-black-58a8a3e824392','Brandon Grotesque');
-@include font-face('skia','skia','skia');
 
 
 
 
 
-@font-face {
-    font-family: 'Lato Light';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Lato Light'), url(../fonts/LatoLight.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-@font-face {
-    font-family: 'Lato Regular';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Lato Regular'), url(../fonts/LatoRegular.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+
+
+
 

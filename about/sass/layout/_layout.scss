@@ -104,9 +104,6 @@ body {
                         @include respond-below(md){
                             letter-spacing: 0.1em;
                         }
-                        &:hover::after{
-                            width:100%;
-                        }    
                         &::after{
                             width: 4ch;
                             background: linear-gradient(to right,$color-border02,$color-border03);
@@ -119,11 +116,21 @@ body {
                             transition:width 2s;
                             transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);                            
                         }
+                        
+                    }
+                    &:hover{
+                        h2::after{
+                            width:100%;
+                        }
                     }
                     .article{
                         text-align: justify;
                         line-height: 1.5;
                         color:$textMain;
+                        letter-spacing: 2px;
+                        &:hover{
+                            background-color:$textAriticle;
+                        }
                     }
                 }
                 
