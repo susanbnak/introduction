@@ -1,0 +1,215 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+@import '../helpers/fonts';
+
+/*----------  body  ----------*/
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+body,
+html {
+    height: 100%;
+}
+a,button,a:hover{
+    outline:0;
+    cursor: pointer;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    min-height: 100%;
+    margin:0;
+    padding:0;
+ }
+
+
+
+/*************************************************************/
+/*                                                           */
+/*************************************************************/
+.symbol-55{color:$symbol-55;}
+
+
+.container-fluid{
+    position: relative;
+    padding:0;
+    background:{
+        image: $bg01,$bg02;
+        repeat:no-repeat,no-repeat;
+        position:left top,right top;
+    }
+
+    &.bg{
+        background-color: $bgColor-body;
+        color:$bodyColor;
+
+        .flex-container{
+            display:flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: stretch;
+            padding-top:4%;
+            
+            .item{
+                display:flex;
+                flex-direction: column;
+                &.one{
+                    flex:1;
+                }
+                &.content-center{
+                    justify-content: center;
+                }
+                &.padding-1p{
+                    padding-left:1%;
+                }
+                h1{
+                    font-family: 'Lulo Clean W01';
+                    font-size:font(5);
+                    line-height: 0.5;
+                    color:$bodyTitle;                    
+                }
+                h2{
+                    font-weight: lighter;
+                    letter-spacing: 1.2rem;
+                    line-height: 0;
+                }
+                
+            }
+            .align-end{
+               align-items:flex-end; 
+            }
+            &.column{
+                flex-flow: column wrap;
+                align-items: flex-start;
+                padding:0 20% 4%;
+                @include respond-below(lg){
+                    padding:0 5% 4%;
+                }
+            
+                .item{
+                    display: flex;
+                    flex-flow: row wrap;
+                    margin-bottom: 2.5%;
+                    h2{
+                        letter-spacing: 0.2em;
+                        font-weight: 300;
+                        color:$textTitle;
+                        position: relative;
+                        line-height: 1.5;
+                        @include respond-below(md){
+                            letter-spacing: 0.1em;
+                        }
+                        &:hover::after{
+                            width:100%;
+                        }    
+                        &::after{
+                            width: 4ch;
+                            background: linear-gradient(to right,$color-border02,$color-border03);
+                            content: "";
+                            position: absolute;
+                            bottom: -8px;
+                            left: 0;
+                            display: block;
+                            height: 2px;
+                            transition:width 2s;
+                            transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);                            
+                        }
+                    }
+                    .article{
+                        text-align: justify;
+                        line-height: 1.5;
+                        color:$textMain;
+                    }
+                }
+                
+            }
+        }//end .flex-container
+        
+    }//end .container-fluid.bg
+    
+   
+    
+}//end .container-fluid
+
+
+
+.drawpic{
+    display:flex;
+    svg{
+        width: 100%;
+        height: auto;
+           
+             /*----------  svg 自畫像  ----------*/
+        &.pic{
+            filter: drop-shadow(-5px 5px 5px darken($shadow,10%));
+            #face,#hair,#neck{
+                polygon{
+                    animation:fadeInDown 0.2s 1 both,pic 5s 1 alternate ease-in-out;
+                }                      
+            }
+            #hair{
+                polygon{
+                    &.ac{
+                        @include ac(0%,50%);
+                        &.a1{
+                            @include ac(25%,45%);
+                        }
+                        &.a2{
+                            @include ac(49%,-55%);
+                        }
+                        &.a3{
+                            @include ac(90%,28%);
+                        }
+                        &.a4{
+                            @include ac(60%,18%);
+                        }
+                    }
+                }                
+            }//end #hair
+            
+            @for $i from 1 through 30 {
+                #face [class*="cls-"]:nth-child(#{$i}),
+                #hair [class*="cls-"]:nth-child(#{$i}),
+                #neck [class*="cls-"]:nth-child(#{$i}) { 
+                animation-delay: #{0.3+($i)/20}s; 
+                }
+            }
+
+            #nose,#eye,
+            #eyebrow,#mouse,#tooth,
+            #glasses,#cloth{
+                polygon{
+                    animation:$ac0;
+                }   
+            }
+
+            @for $i from 1 through 80 {
+                #nose [class*="cls-"]:nth-child(#{$i}),
+                #eye [class*="cls-"]:nth-child(#{$i}),
+                #eyebrow [class*="cls-"]:nth-child(#{$i}),
+                #mouse [class*="cls-"]:nth-child(#{$i}),
+                #tooth [class*="cls-"]:nth-child(#{$i}),
+                #glasses [class*="cls-"]:nth-child(#{$i}),
+                #cloth [class*="cls-"]:nth-child(#{$i}) { 
+                    animation-delay: #{0.4+($i)/20}s;
+                    animation-duration: 10s; 
+                }
+            }
+
+            #face,#neck,#nose,#glasses,
+            #cloth,#mouse,#tooth{
+                polygon{
+                    &.ac{
+                        animation: $ac1;
+                    }
+                }
+            }
+        }//end .pic
+        
+    }//end .drawpic>svg
+}//end .drawpic

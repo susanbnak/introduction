@@ -1,0 +1,8 @@
+/*//ex1
+@function gray($level: 0%){
+    @return darken(#fff,$level);
+}
+header{
+    background-color:gray(15%);
+}
+*/

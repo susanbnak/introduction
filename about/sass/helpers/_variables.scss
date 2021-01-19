@@ -1,0 +1,131 @@
+@import 'mixins';
+
+//color
+
+$black:  #000 ;
+$white:  #fff ;
+$color-border01:#74cec8;
+$color-border02:#f16969;
+$color-border03:#f5bd44;
+$bodyColor:#333434;
+$bodyTitle:#434444;
+$textTitle:darken($color-border01,31%);
+$textMain:lighten($bodyTitle,20%);
+$shadow:#878787;
+
+$color-57:#ef657d;
+$symbol-55:darken($color-57,25%);
+
+
+$gray-l30: lighten($black,30%) ;
+
+//bg
+$image-location:'../img/';
+$bg01:url(#{$image-location}bg-01.png);
+$bg02:url(#{$image-location}bg-02.png);
+$bgColor-body:#f6f6ee;
+
+
+
+//svg color
+$color-16:#e3b499;
+$color-45:#ecc5a5;
+
+.cls-1{fill:$color-16;}
+.cls-2{fill:#8f6251;}
+.cls-3{fill:#be8f79;}
+.cls-31,.cls-4{fill:darken($color-16, 1%);}
+.cls-5{fill:#674637;}
+.cls-49,.cls-6{fill:#c5977d;}
+.cls-7{fill:$color-16;}
+.cls-45,.cls-8{fill:$color-45;}
+.cls-9{fill:darken($white,0.5%);}
+.cls-10{fill:darken($white,1%);}
+.cls-11{fill:#f4f2ed;}
+.cls-12{fill:#f7f0e4;}
+.cls-13{fill:#f9ebcb;}
+.cls-14,.cls-15{fill:#697d7b;}
+.cls-16{fill:#8ca2a3;}
+.cls-17{fill:#cbdad9;}
+.cls-18{fill:#bececb;}
+.cls-19{fill:#b2c4c3;}
+.cls-20{fill:#494949;}
+.cls-21{fill:#c7d2d4;}
+.cls-22{fill:#acbfbe;}
+.cls-23{fill:#5e5d5d;}
+.cls-24{fill:#cad7d8;}
+.cls-26{fill:$color-45;}
+.cls-27{fill:#e8bbaa;}
+.cls-28{fill:darken($color-45, 0.25%);}
+.cls-29,.cls-41{fill:#e2bea0;}
+.cls-30{fill:darken($color-45, 0.5%);}
+.cls-32{fill:#c49783;}
+.cls-33,.cls-34{fill:#c59a86;}
+.cls-35,.cls-46{fill:#efc8ac;}
+.cls-36{fill:#d5aa93;}
+.cls-37{fill:darken($color-45, 0.5%);}
+.cls-38{fill:#ce9d82;}
+.cls-39,.cls-43{fill:#d8b7a7;}
+.cls-40{fill:darken($color-45, 0.6%);}
+.cls-42{fill:#ccaf96;}
+.cls-44,.cls-48{fill:$color-45;}
+.cls-47{fill:#dcb597;}
+.cls-50,.cls-52{fill:lighten($color-45, 0.6%);}
+.cls-51{fill:#caa68e;}
+.cls-53,.cls-67{fill:#5b4135;}
+.cls-54,.cls-69{fill:#51372e;}
+.cls-55{fill:lighten($color-57,10%);}
+.cls-56{fill:darken($color-57,15%);}
+.cls-57{fill:$color-57;}
+.cls-58{fill:darken($white,0.1%);}
+.cls-59{fill:darken($white,0.2%);}
+.cls-60{fill:#3d3d3d;}
+.cls-61{fill:#595757;}
+.cls-62{fill:#373336;}
+.cls-63{fill:#3f3f3f;}
+.cls-64{fill:#4b494a;}
+.cls-65{fill:#848484;}
+.cls-68{fill:#604339;}
+.cls-70{fill:#656364;}
+.cls-71{fill:#1e1e1b;}
+.cls-72,.cls-76{fill:#2a1f20;}
+.cls-73{fill:#231815;}
+.cls-74{fill:#191213;}
+.cls-75{fill:#191210;}
+.cls-77{fill:#190606;}
+.cls-78{fill:#9cb1b1;}
+.cls-79{fill:#3a2825;}
+.cls-1,.cls-10,.cls-12,.cls-16,.cls-18,.cls-19,.cls-24,.cls-65,.cls-66{@include opacity(0.8);}
+.cls-2,.cls-5,.cls-53,.cls-54{@include opacity(0.5);}
+.cls-28,.cls-29,.cls-34,.cls-38,.cls-39,.cls-4,.cls-42,.cls-44,.cls-46,.cls-47,.cls-50,.cls-6,.cls-7,.cls-8{@include opacity(0.7);}
+.cls-15,.cls-20,.cls-21,.cls-23,.cls-25,.cls-73,.cls-74,.cls-75,.cls-76,.cls-77,.cls-79,.cls-9{@include opacity(0.9);}
+
+//z-index
+$zindex: (
+    bg:-2,
+    textTyping:1,
+    c-scroll:2,
+    label: 10,
+);
+
+//font family
+$font_fi_01: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$font_skia:'skia';
+$font_DancingScriptOT:'Dancing Script OT';
+
+
+//font size
+$fontbase: 0.4rem;
+@function font($level: 1) {
+  @return $fontbase*$level;
+}
+
+$font-size-base:              1rem !default; 
+$h1-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+
+
